@@ -16,6 +16,12 @@ const icons = {
   website:
     '<svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.25c-5.39 0-9.75 4.36-9.75 9.75s4.36 9.75 9.75 9.75 9.75-4.36 9.75-9.75S17.39 2.25 12 2.25Zm6.82 9H15.7a17.3 17.3 0 0 0-1.15-5.22 8.28 8.28 0 0 1 4.27 5.22ZM12 4.1c.7 0 1.9 2 2.46 5.15H9.54C10.1 6.1 11.3 4.1 12 4.1Zm-2.55 1.93A17.3 17.3 0 0 0 8.3 11.25H5.18a8.28 8.28 0 0 1 4.27-5.22ZM5.18 12.75H8.3c.12 1.84.52 3.63 1.15 5.22a8.28 8.28 0 0 1-4.27-5.22Zm6.82 7.15c-.7 0-1.9-2-2.46-5.15h4.92c-.56 3.15-1.76 5.15-2.46 5.15Zm2.55-1.93c.63-1.59 1.03-3.38 1.15-5.22h3.12a8.28 8.28 0 0 1-4.27 5.22Z"/></svg>'
 };
+const themeIcons = {
+  dark:
+    '<svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A8.99 8.99 0 0 1 11.2 3a.75.75 0 0 0-.88.92A7.5 7.5 0 1 0 20.08 13.68a.75.75 0 0 0 .92-.88Z"/></svg>',
+  light:
+    '<svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2.75v2.1M12 19.15v2.1M21.25 12h-2.1M4.85 12h-2.1M18.54 5.46l-1.48 1.48M6.94 17.06l-1.48 1.48M18.54 18.54l-1.48-1.48M6.94 6.94 5.46 5.46"/></svg>'
+};
 
 const page = document.body.dataset.page;
 const pageTitles = {
@@ -212,13 +218,32 @@ function setupThemeToggle() {
     return;
   }
 
+  renderThemeToggle(toggle, theme);
+
   toggle.addEventListener("click", () => {
     const nextTheme = root.dataset.theme === "dark" ? "light" : "dark";
     root.dataset.theme = nextTheme;
     localStorage.setItem("theme", nextTheme);
+    renderThemeToggle(toggle, nextTheme);
   });
 }
 
 function icon(name) {
   return icons[name] || "";
+}
+
+function renderThemeToggle(toggle, theme) {
+  const iconSlot = toggle.querySelector("[data-theme-icon]");
+  const labelSlot = toggle.querySelector("[data-theme-label]");
+  const nextTheme = theme === "dark" ? "light" : "dark";
+
+  if (iconSlot) {
+    iconSlot.innerHTML = themeIcons[theme];
+  }
+
+  if (labelSlot) {
+    labelSlot.textContent = theme === "dark" ? "Dark" : "Light";
+  }
+
+  toggle.setAttribute("aria-label", `Switch to ${nextTheme} mode`);
 }

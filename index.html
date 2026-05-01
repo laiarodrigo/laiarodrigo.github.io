@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Newsreader:opsz,wght@6..72,600;6..72,700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="assets/css/site.css" />
@@ -32,15 +32,8 @@
           aria-label="Toggle color theme"
           data-theme-toggle
         >
-          <svg
-            class="theme-toggle__icon"
-            viewBox="0 0 24 24"
-            aria-hidden="true"
-          >
-            <path
-              d="M12 3.75a.75.75 0 0 1 .75.75v1.5a.75.75 0 0 1-1.5 0V4.5a.75.75 0 0 1 .75-.75Zm0 12.75a4.5 4.5 0 1 0 0-9 4.5 4.5 0 0 0 0 9Zm7.5-5.25a.75.75 0 0 1 0 1.5H18a.75.75 0 0 1 0-1.5h1.5Zm-13.5 0a.75.75 0 0 1 0 1.5H4.5a.75.75 0 0 1 0-1.5H6Zm9.546-4.296a.75.75 0 0 1 1.061 0l1.06 1.06a.75.75 0 1 1-1.06 1.061l-1.06-1.06a.75.75 0 0 1 0-1.061Zm-9.193 9.193a.75.75 0 0 1 1.06 0l1.061 1.06a.75.75 0 0 1-1.06 1.061l-1.061-1.06a.75.75 0 0 1 0-1.061Zm11.314 1.06a.75.75 0 1 1-1.06 1.061l-1.061-1.06a.75.75 0 0 1 1.06-1.061l1.061 1.06Zm-9.193-9.193a.75.75 0 0 1 0 1.061l-1.06 1.06a.75.75 0 0 1-1.061-1.06l1.06-1.061a.75.75 0 0 1 1.061 0ZM12 18a.75.75 0 0 1 .75.75v1.5a.75.75 0 0 1-1.5 0v-1.5A.75.75 0 0 1 12 18Z"
-            />
-          </svg>
+          <span class="theme-toggle__icon-wrap" data-theme-icon aria-hidden="true"></span>
+          <span class="theme-toggle__text" data-theme-label>Light</span>
         </button>
       </header>
 
@@ -68,9 +61,9 @@
           <span class="eyebrow">Profile</span>
           <h2 class="section-title" data-about-heading>About me</h2>
           <p class="lead" data-about-lead>
-            Master in Computer Science and Engineering (Artificial Intelligence)
-            at Instituto Superior Tecnico, supervised by Arlindo Oliveira and
-            Bruno Martins.
+            Master&apos;s student in Computer Science and Engineering
+            (Artificial Intelligence) at Instituto Superior Tecnico, supervised
+            by Arlindo Oliveira and Bruno Martins.
           </p>
           <div class="prose" data-about-body></div>
         </section>

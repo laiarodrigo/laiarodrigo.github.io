@@ -16,8 +16,7 @@ export const siteData = {
       },
       {
         icon: "email",
-        text: "rodrigo.laia@tecnico.ulisboa.pt",
-        href: "mailto:rodrigo.laia@tecnico.ulisboa.pt"
+        text: "rodrigo.laia [at] tecnico.ulisboa.pt"
       }
     ],
     links: [
@@ -36,10 +35,10 @@ export const siteData = {
   about: {
     heading: "About me",
     lead:
-      'Master in Computer Science and Engineering (Artificial Intelligence) at Instituto Superior Tecnico, conducting a thesis under the supervision of <a href="https://web.tecnico.ulisboa.pt/arlindo.oliveira/" target="_blank" rel="noreferrer">Arlindo Oliveira</a> and <a href="https://web.tecnico.ulisboa.pt/arlindo.oliveira/" target="_blank" rel="noreferrer">Bruno Martins</a>.',
+      'Master&apos;s student in Computer Science and Engineering (Artificial Intelligence) at Instituto Superior Tecnico, supervised by <a href="https://web.tecnico.ulisboa.pt/arlindo.oliveira/" target="_blank" rel="noreferrer">Arlindo Oliveira</a> and <a href="https://web.tecnico.ulisboa.pt/arlindo.oliveira/" target="_blank" rel="noreferrer">Bruno Martins</a>.',
     paragraphs: [
-      "I am currently a researcher at INESC-ID / Instituto Superior Tecnico, working on translation and classification between European and Brazilian Portuguese. My interests center on natural language processing, machine learning, and building reliable evaluation pipelines for applied AI systems.",
-      "Alongside my thesis work, I have research experience in anomaly detection for network operations at Diffusion Dynamics and in data-driven modeling for nuclear fusion research through collaborations with the University of Wisconsin-Madison and LIP. I also received Tecnico's Academic Merit Award for 2024/2025."
+      "I am currently doing my thesis at INESC-ID on translation and classification between European and Brazilian Portuguese.",
+      "More broadly, I am interested in natural language processing and machine learning, and I have also worked on anomaly detection and data-driven methods for nuclear fusion research."
     ]
   },
   publications: [
