@@ -35,7 +35,7 @@ export const siteData = {
   about: {
     heading: "About me",
     lead:
-      'Master&apos;s student in Computer Science and Engineering (Artificial Intelligence) at Instituto Superior Tecnico, supervised by <a href="https://web.tecnico.ulisboa.pt/arlindo.oliveira/" target="_blank" rel="noreferrer">Arlindo Oliveira</a> and <a href="https://web.tecnico.ulisboa.pt/arlindo.oliveira/" target="_blank" rel="noreferrer">Bruno Martins</a>.',
+      'Master&apos;s student in Computer Science and Engineering (Artificial Intelligence) at Instituto Superior Tecnico, supervised by <a href="https://web.tecnico.ulisboa.pt/arlindo.oliveira/" target="_blank" rel="noreferrer">Arlindo Oliveira</a> and <a href="https://bgmartins.github.io/" target="_blank" rel="noreferrer">Bruno Martins</a>.',
     paragraphs: [
       "I am currently doing my thesis at INESC-ID on translation and classification between European and Brazilian Portuguese.",
       "More broadly, I am interested in natural language processing and machine learning, and I have also worked on anomaly detection and data-driven methods for nuclear fusion research."
