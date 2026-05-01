@@ -101,7 +101,7 @@ export const siteData = {
           place: "INESC-ID / Instituto Superior Tecnico",
           period: "Sep 2025 - Present",
           description:
-            'Master thesis on translation and classification between European and Brazilian Portuguese, supervised by <a href="https://web.tecnico.ulisboa.pt/arlindo.oliveira/" target="_blank" rel="noreferrer">Arlindo Oliveira</a> and <a href="https://web.tecnico.ulisboa.pt/arlindo.oliveira/" target="_blank" rel="noreferrer">Bruno Martins</a>.'
+            'Master thesis on translation and classification between European and Brazilian Portuguese, supervised by <a href="https://web.tecnico.ulisboa.pt/arlindo.oliveira/" target="_blank" rel="noreferrer">Arlindo Oliveira</a> and <a href="https://bgmartins.github.io/" target="_blank" rel="noreferrer">Bruno Martins</a>.'
         },
         {
           role: "Researcher (Machine Learning)",
